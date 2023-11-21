@@ -44,7 +44,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
         })
         .first()
 
-      return transaction
+      return { transaction }
     },
   )
 
